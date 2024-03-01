@@ -1,0 +1,57 @@
+{
+  "id": "e63a96c8-665d-4c07-95f3-0a268acd4e41",
+  "version": "2.0",
+  "name": "newp",
+  "url": "https://arxiv.org/list/physics/new",
+  "tests": [{
+    "id": "a6dc2bde-2879-4c20-83ce-c5d7a63d0d0d",
+    "name": "test1",
+    "commands": [{
+      "id": "95104398-534b-4b97-8f36-aaae3b49a61d",
+      "comment": "",
+      "command": "open",
+      "target": "https://arxiv.org/list/physics/new",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6c2c26f-b4af-45f3-893c-c80b6047ef12",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "767x790",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20ce94d1-9aa3-49b8-84c1-d91d536cd726",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=pdf",
+      "targets": [
+        ["linkText=pdf", "linkText"],
+        ["css=dl:nth-child(10) > dt:nth-child(1) a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'pdf')]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/dl/dt/span/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pdf/2402.18578')]", "xpath:href"],
+        ["xpath=//span/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48d66ebe-46bb-429c-93ff-d154efd0130e",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "26122fe2-295f-45ab-bc97-6f22de17d3e2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6dc2bde-2879-4c20-83ce-c5d7a63d0d0d"]
+  }],
+  "urls": [],
+  "plugins": []
+}
