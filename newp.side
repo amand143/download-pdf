@@ -24,7 +24,7 @@
       "id": "20ce94d1-9aa3-49b8-84c1-d91d536cd726",
       "comment": "",
       "command": "click",
-      "target": "linkText=pdf",
+      "target": "xpath=//*[@id=\"dlpage\"]/dl[1]/dt[1]/span/a[2]",
       "targets": [
         ["linkText=pdf", "linkText"],
         ["css=dl:nth-child(10) > dt:nth-child(1) a:nth-child(2)", "css:finder"],
@@ -52,6 +52,6 @@
     "timeout": 300,
     "tests": ["a6dc2bde-2879-4c20-83ce-c5d7a63d0d0d"]
   }],
-  "urls": [],
+  "urls": ["https://arxiv.org/list/physics/new"],
   "plugins": []
 }
